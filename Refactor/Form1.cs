@@ -17,14 +17,15 @@ namespace Refactor
             InitializeComponent();
         }
 
-        private void ResultBtn_Click(object sender, EventArgs e)
+        private void ResultBtn_Click(object sender, EventArgs e) //Событтие мрабатывает при нажатии на кнопку результата
         {
             try
             {
-
-                int a = Convert.ToInt32(StrTxb1.Text);
+                //Конвертируем строку в число и присваеваем переменным
+                int a = Convert.ToInt32(StrTxb1.Text); 
                 int b = Convert.ToInt32(StrTxb2.Text);
                 int c = Convert.ToInt32(StrTxb3.Text);
+                
                 int lose;
                 lose = 0;
 
@@ -131,6 +132,12 @@ namespace Refactor
                 e.Handled = true;
             }
         }
+        //приставка On в названии обработчика события
+        //в качестве отступов используйте 4 пробела и не используйте табуляцию;
+        //посмотреть порядок расположения членов класса
+        //стили написания составных слов
+        //удалить бесполезные события
+        //написать больше сопровождающих комментариев
 
         private void StrTxb1_TextChanged(object sender, EventArgs e)
         {
